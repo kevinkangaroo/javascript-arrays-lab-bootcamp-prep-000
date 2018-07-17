@@ -16,5 +16,6 @@ function destructivelyRemoveFirstKitten() {
 }
 
 function appendKitten(name) {
-  return kittens.slice(...kittens, name)
+  var newKittens = kittens.slice(...kittens, name)
+  return newKittens
 }
